@@ -46,7 +46,7 @@ public class Operator1 {
 
 
                 int now = 22;
-                int after50hour = now + (50 % 24); //괄호를 쳐주면, 우선 연산자가 된다
+                int after50hour = (now+50) % 24; //괄호를 쳐주면, 우선 연산자가 된다
                 System.out.println(after50hour);
 
 

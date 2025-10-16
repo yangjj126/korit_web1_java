@@ -8,12 +8,12 @@
 - git config --global user.name 내 아이디
 - git config --global user.email 내 이메일
 ---
-
+변경사항 수정 -> git add -> git status -> git push
 
 내컴퓨터에서 코드 작업(코드 변경)을 함(로컬) -> 원격 레포지토리에 게시
 1. 변경사항에 대해서 저장한다( = 스테이징 영역에 올린다)  - git add
 2. add를 여러번해서 한 화물차에 많은 짐을 싣게 된다 -git add
-3. 화물차 문을 닫고, 출발 준비 (=스테이징된 변경사항을 하나의 버전으로 포장) -git commit -m"커밋메시지:
+3. 화물차 문을 닫고, 출발 준비 (=스테이징된 변경사항을 하나의 버전으로 포장) -git commit -m"커밋메시지":
 4. 준비된 화물차들을 원격레포지토리로 보낸다 ( = 로컬 커밋을 원격저장소에 게시한다 ) - git push
 
 //git add -> git commit -> git push
@@ -25,7 +25,9 @@
 git remote add origin 레포지토리(https://github.com)
 2. 최초 push시에만 , git push -u origin main
 
+---
+다른 로컬에서 원격 레포지토리에 있는 코드를 다운로드하는 방법
+git clone 원격레포지토리 주소
 
-git init은 git시작
 
 
