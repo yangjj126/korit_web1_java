@@ -36,5 +36,7 @@ public class Operator5 {
                     ? postCard/20  //떨어지면, 몫을 대입
                     : (postCard/20) + 1; //떨어지지않으면, 몫 + 1
         System.out.println(pageCount);
+
+        //git add. -> git commit -m"메시지" -> git push 하면 깃에 저잗됨
     }
 }
