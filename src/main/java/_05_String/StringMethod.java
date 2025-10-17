@@ -35,7 +35,8 @@ public class StringMethod {
         String str1 = "hello";
         String str2 = new String("hello");
         // 새로운 String 객체를 힙(Heap) 메모리에 생성해 줘!"라고 명령하는 거예요.
-        // 기존의
+        // 보통 변수값을 동일하게 설정하면, 우선 기존의 풀에서 동일한 값을 가져오게된다.
+        // 기존의 풀에서 가지고 오기 싫을때, new String(~~)를 써준다
         System.out.println(str1 == str2); //같을까 => heap에 값(출력값)이 아무리 같아도, 그해당값의 주소(stack)이 다르기때문에 false
         System.out.println(str1.equals(str2)); //문자열값의 올바른 비교
 
@@ -72,6 +73,30 @@ public class StringMethod {
         //6. 특정문자열의 포함 여부 // 결과 타입 : boolean 조건문하고 잘쓰임
         System.out.println(str.contains("name")); // true
         System.out.println(str.contains("age")); // true
+
+        str = "we study JAVA";
+        //7. 특정문자열이 어디서 시작하는지(index)를 찾기 // 결과값: int
+        System.out.println(str.indexOf("study")); //index 3에서부터 시작함
+        System.out.println(str.indexOf("python")); //없으면, -1에서 가져온다
+
+        // 8. 부분문자열 추출 // 결과값 : String
+        // index하나만 작성하면, 해당 index부터 끝까지 잘라옴
+        System.out.println(str.substring(3));
+        // index 2개를 작성하면 , index 3이상 8미만 꺼지 출력한다
+        System.out.println(str.substring(3,8));
+
+        //예제1) JAVA를 추출하기
+        // 1. JAVA가 있는지 확인한다
+        System.out.println(str.contains("Java")); // 있는지 확인
+        // 2. "JAVA"의 위치를 찾는다
+        int indexOfJAVA = str.indexOf("Java");
+        // 3. 슬라이싱 해오자
+        System.out.println(str.substring(indexOfJAVA));
+
+
+
+
+
 
 
     }
