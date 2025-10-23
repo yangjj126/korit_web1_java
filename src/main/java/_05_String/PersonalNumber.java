@@ -20,7 +20,7 @@ public class PersonalNumber {
 
         //방법2
         birthDate = pn.substring(0, dashIndex);
-        String gendercode = pn.substring( dashindex + 1, dashIndex + 2); //성별코드
+//        String gendercode = pn.substring( dashindex + 1, dashIndex + 2); //성별코드
 
 
 
@@ -57,12 +57,12 @@ public class PersonalNumber {
         username = email.substring(0,atIndex);
         //3. 도메인(naver, gmail, daum등...)
         String remain = email.substring(atIndex + 1); // @이후부터 끝까지
-        int dotIndex = remmain.indexOf("."); // 잘라온것에서 "."위치를 찾음
-        domainName = remain.substring(0, dotIndex); // 잘라온것에서 "." 직전까지
+//        int dotIndex = remmain.indexOf("."); // 잘라온것에서 "."위치를 찾음
+//        domainName = remain.substring(0, dotIndex); // 잘라온것에서 "." 직전까지
 
         System.out.println("유효한가요?" + isValidEmail);
         System.out.println("아이디" + username);
-        System.out.println("도메인" + domainName);
+//        System.out.println("도메인" + domainName);
 
 
         scanner.close();

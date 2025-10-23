@@ -28,7 +28,7 @@ public class Operator1 {
 
 
 
-        //비교 연산자
+//        비교 연산자
 //        System.out.println(num1 == num2); //같은 연산자
 //        System.out.println(num1 != num2); //다른지 연산자
 //        System.out.println(num1 > num2);
