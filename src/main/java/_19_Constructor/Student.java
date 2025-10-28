@@ -27,16 +27,23 @@ public class Student {
         boolean korValidation = validateScore(kor);
         boolean engValidation = validateScore(eng);
         boolean mathValidation = validateScore(math);
+
         // false면 if 문 실행
         if(!korValidation || !engValidation || !mathValidation) {
             System.out.println("점수는 0~100 이어야합니다.");
             return; // 원래라면 정의한 에러를 일으켜야한다.
         }
+        // 국어, 수학, 영어 모두 다 조건이 반복되기때문에 , 따로 함수로 빼서 정의한것이다
 
         this.name = name;
         this.kor = kor;
         this.eng = eng;
         this.math = math;
+
+        // student1의 입장에서 student1.eng와 this.eng는 같은 말이다
+        // student2의 입장에서 student2.eng와 this.eng는 같은 말이다
+
+
         /*
         this란? 객체 자신을 가르키는 참조값(주소)이다.
         Student student2 = new Student(~,~,~,~);
@@ -66,5 +73,14 @@ public class Student {
 
     // 기본생성자(NoArgsConstructor)
     public Student() {}
+
+    // 이름만 받아주는 생성자
+    public Student(String name) {
+        this(name, 0,0,0);
+        // this()
+        // this() != this 서로 상관 없음.
+        // 같은 이름의 생성자를 호출 -> 오버로딩된 생성자를 호출 ==> 같은 이름의 생성자를 호출하는 방법
+        // 제약사항 : 생성자의 가장 첫줄에 적어줘야한다
+    }
 
 }
