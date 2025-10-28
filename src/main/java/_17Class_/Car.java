@@ -1,8 +1,7 @@
 package _17Class_;
 
 public class Car {
-    public int speed;
     String brand;
-    String modelName;
+    String model;
     int year;
 }
