@@ -1,7 +1,7 @@
 package _17Class_;
 
 public class Student { //Student클래스 정의 시작
-    // 클래스 -> 속성(필드, 멤버) + 동작(메서드)
+    // 클래스 -> 속성(필드, 멤버) + 동작(메서드) 로 구성되어있다음....
 
     //name, korean, english, math ->  필드(속성)
     String name; //이름
