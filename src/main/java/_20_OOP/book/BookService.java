@@ -39,25 +39,25 @@ public class BookService {
 
 
 
-    // 등록된 도서를 콘솔로 출력
-    void printRegisteredBooks() {
-        // books -> 레파지토리가 리턴한 newBooks
-        Book[] books = bookRepository.getBooksDatas();
-
-        // 도서가 하나도 없을 경우
-        if (books.length == 0) {
-            System.out.println("등록된 도서가 없습니다");
-            return;
-        }
-
-
-        for (int i = 0; i < books.length; i++){
-            // 반복하면서, books배열에서 book을 하나씩 꺼낸다
-            Book book = books[i];
-            System.out.println(book.toString());
-        }
-
-
-    }
+//    // 등록된 도서를 콘솔로 출력
+//    void printRegisteredBooks() {
+//        // books -> 레파지토리가 리턴한 newBooks
+////        Book[] books = bookRepository.getBooksDatas();
+//
+//        // 도서가 하나도 없을 경우
+//        if (books.length == 0) {
+//            System.out.println("등록된 도서가 없습니다");
+//            return;
+//        }
+//
+//
+//        for (int i = 0; i < books.length; i++){
+//            // 반복하면서, books배열에서 book을 하나씩 꺼낸다
+//            Book book = books[i];
+//            System.out.println(book.toString());
+//        }
+//
+//
+//    }
 
 }
