@@ -12,6 +12,8 @@ public class Delivery {
     public int calcFee() {
         return 3000;
     }
+    // 우리는 굳이 부모클래스의 retrurn 3000이 필요하지 않다 => 이제는 "추상화"를 배울 단꼐
+
 
     public void printInfo() {
         int fee = calcFee();
