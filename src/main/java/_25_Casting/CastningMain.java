@@ -43,7 +43,7 @@ public class CastningMain {
         // 다운캐스팅 주의사항
         // 런타임 오류가 발생할 수 있음
         // 컴파일러는 Car -> ElectricCar로 다운캐스팅 용인 (타입 고려)
-        // JVM입장에서는 Heap에= [battery | model ] 초기화를 해야하는데,
+        // JVM입장 에서는 Heap에 = [battery | model ] 초기화를 해야하는데,
         // car2는  battery 필드가 존재하지 않음 -> 런타임 오류
         ElectricCar eCar2 = (ElectricCar) car2;
         // 컴파일러에서는 eCar을 Car로 받아들이기 때문에
@@ -57,7 +57,7 @@ public class CastningMain {
         if (car2 instanceof ElectricCar){
             ElectricCar eCar2 = (ElectricCar) car2;
         } else if (car2 instanceof GasCar){
-            GasCar gCar = (GasCar) car2
+            GasCar gCar = (GasCar) car2;
         }
 
         Car tesla = new ElectricCar("모델S");

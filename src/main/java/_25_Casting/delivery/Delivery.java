@@ -1,12 +1,10 @@
 package _25_Casting.delivery;
 
-import java.sql.SQLOutput;
-
 public class Delivery {
-    protected int distance; //배송거리
-    protected  int weight; // 배송물무게
+    protected int distance; // 배송거리
+    protected int weight; // 배송물무게
 
-    public Delivery(int distance int weight) {
+    public Delivery(int distance, int weight) {
         this.distance = distance;
         this.weight = weight;
     }
@@ -19,6 +17,4 @@ public class Delivery {
         int fee = calcFee();
         System.out.println("배송비: " + fee);
     }
-
-    //지금까지는 부모클래스를 정의한것
 }
