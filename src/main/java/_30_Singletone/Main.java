@@ -24,7 +24,7 @@ public class Main {
         System.out.println(config2);
 
         // 설정값(객체 상태)를 공유한다
-//        config1.setAppMode(AppConfig.PRODUCTION_MODE);
+        //config1.setAppMode(AppConfig.PRODUCTION_MODE);
         //뭐가 잘못 된걸까,,,
 
         // config1과 config2의 상태모두 변경 -> 같은객체다
