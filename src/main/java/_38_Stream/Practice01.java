@@ -29,6 +29,12 @@ public class Practice01 {
         // reduce 최종연산자를 사용해야한다
 
         // 1. 가격들만 뽑아서, 평균
+        int priceSum = items.stream()  // [객체1, 객체2 ...
+                .map(item -> item.getPrice()) // [ 10000000, 30000 ...
+                .reduce(0,(sum , price) -> sum + price);
+        double avgPrice = (double) priceSum / items.size();
+
+
 
 
         // 2. 각 재고들의 총가격 출력 ( 리턴x  -> forEach )
@@ -41,13 +47,14 @@ public class Practice01 {
                 });
 
 
+       // 재고 가격의 총합 구해보기  reduce를 써서..
+        int pricesam = items.stream()
+                .map(item -> item.getPrice() * item.getStock())
+                .reduce(0,(sum , price) -> sum + price); //reduce가 좀 헷갈린다..
+        System.out.println(pricesam);
 
-        // 3. 재고가 1개 이상이면서, 세일중인 items들의 리스트를 구해라
-//        String[] conditionItems = items.stream()
-//                .filter(item -> item.getStock() > 1 && item.isOnSale())
-//                .collect(Collectors.toList());
-//        System.out.println(Arrays.toString(conditionItems));
-// 내갛나거
+
+
 
 
         // 3. 재고가 1개 이상이면서, 세일중인 items들의 리스트를 구해라
@@ -58,3 +65,12 @@ public class Practice01 {
         System.out.println(filteredItems);
     }
 }
+
+
+// 3. 재고가 1개 이상이면서, 세일중인 items들의 리스트를 구해라
+//        String[] conditionItems = items.stream()
+//                .filter(item -> item.getStock() > 1 && item.isOnSale())
+//                .collect(Collectors.toList());
+//        System.out.println(Arrays.toString(conditionItems));
+
+// 요즘에는 주로 짬뽕해서 사용된다//...
